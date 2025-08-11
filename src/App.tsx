@@ -7,6 +7,11 @@ import { ThemeProvider } from "@/providers/ThemeProvider";
 import { AppLayout } from "@/components/layout/AppLayout";
 import Dashboard from "./pages/Dashboard";
 import Estoque from "./pages/Estoque";
+import Entrada from "./pages/Entrada";
+import Saida from "./pages/Saida";
+import Relatorios from "./pages/Relatorios";
+import Alertas from "./pages/Alertas";
+import Configuracoes from "./pages/Configuracoes";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +27,11 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/estoque" element={<Estoque />} />
+              <Route path="/stock-in" element={<Entrada />} />
+              <Route path="/stock-out" element={<Saida />} />
+              <Route path="/reports" element={<Relatorios />} />
+              <Route path="/alerts" element={<Alertas />} />
+              <Route path="/settings" element={<Configuracoes />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
