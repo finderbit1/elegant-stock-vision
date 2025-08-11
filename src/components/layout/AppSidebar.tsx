@@ -26,7 +26,7 @@ import {
 
 const mainItems = [
   { title: "Dashboard", url: "/", icon: Home },
-  { title: "Estoque", url: "/inventory", icon: Package },
+  { title: "Estoque", url: "/estoque", icon: Package },
   { title: "Entrada", url: "/stock-in", icon: TrendingUp },
   { title: "Saída", url: "/stock-out", icon: TrendingDown },
   { title: "Relatórios", url: "/reports", icon: BarChart3 },
